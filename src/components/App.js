@@ -8,12 +8,12 @@ const Child = ({items, setItems})=>{
     setItems(newItems)
   }
   return (
-    <div className="child">
-      <ul>
+    <div >
+      <ul className="child">
         {
           items.map((el,i)=>{
             return (
-              <li>{el.name} {el.price} <button onClick={()=>deleteItem(i)}  >Delete</button></li>
+              <li>{el.name} - {el.price} <button onClick={()=>deleteItem(i)}  >Delete</button></li>
             )
           })
         }
