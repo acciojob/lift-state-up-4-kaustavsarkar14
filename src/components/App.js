@@ -7,7 +7,7 @@ const Child = ({items, setItems})=>{
     const newItems = items.filter((el,ind)=>ind!=i)
     setItems(newItems)
   }
-  return (
+  return ( 
     <div >
       <ul className="child" >
         {
